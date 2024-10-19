@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-white">
+    <div class="container mx-auto">
+        <!-- Menu Bar -->
+        <nav class=" p-2">
+            <div class=" container mx-auto flex justify-between items-center">
+                <div class=" font-semibold w-45">
+                    <img class="w-40"  src="assets/Heritage Quest Logo 1.png" >
+                </div>
+                <div class="container mx-auto flex justify-center hidden md:flex">
+                    
+                    <ul class="flex space-x-4 text-black font-bold text-xl items-center  font-serif">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About US</a></li>
+                        
+                            <li class="relative group">
+                                <a href="#" class="hover:underline bg-[#EB5757]">Database</a>
+                                <!-- Subsections -->
+                                <ul class="absolute hidden z-10 group-hover:flex flex-col bg-white border shadow-md mt-2 left-0 w-40 space-y-1 rounded-md">
+                                  <li><a href="Database-detail.html" class="block px-4 py-2 hover:bg-gray-100">Database</a></li>
+                                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 2</a></li>
+                                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 3</a></li>
+                                </ul>
+                              </li>   
+                
+                        <li><a href="#" class="hover:underline">Blogs</a></li>
+                        <li><a href="#" class="hover:underline">Contact US</a></li>
+                        <li><a href="#" class="hover:underline">Become a Contributor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="text-black">login</button>
+                </div>
+            </div>
+        </nav>
+    
+        <div class=" relative bg-[#111827] py-4 h-[119px]">
+            <div class="absolute right-0 top-0 flex items-center h-full">
+                <!-- Image: Reduced size and aligned to the left -->
+                <img src="Mask group.png" class="  w-45 h-auto object-contain" alt="Logo">
+            </div>
+            <!-- Container for text content in the black section -->
+            <div class="container mx-auto text-white flex justify-between items-center p-2">
+                <!-- Left: DATABASE title and description -->
+                <div>
+                    <h1 class="text-xl font-semibold">DATABASE</h1>
+                    <p class="text-sm text-blue-400 hover:underline cursor-pointer">Explore our diverse collection</p>
+                </div>
+        
+                
+            </div>
+        </div>
+        
+    
+    <div class="flex justify-between items-center p-2 ">
+        <!-- First paragraph aligned to the left -->
+         <div>
+            <p class=" text-gray-600">Showing 1-20 out of 2,356 Products</p>
+         </div>
+        
+         <div>
+           <form id="item_search">
+            <input type="text" id="search" placeholder="Search..." class="px-4 py-2 border border-gray-300 rounded-md">
+            <button type="submit" class="bg-gray-800 text-white py-1 px-4 rounded-md">search</button>
+           </form>
+            <button class="absolute right-2 top-2 text-gray-400 hover:text-gray-600">
+                
+            </button>
+         </div>
+
+         <div>
+            <select class="px-4 py-2 border border-gray-300 rounded-md text-gray-600">
+                <option>Sort by: Site</option>
+                <option>Sort by: Popularity</option>
+                <option>Sort by: Newest</option>
+            </select>
+        </div>
+         
+    </div>
+   
+    <div class="mt-5 flex w-full h-auto bg-[#F9FAFB] p-4 flex flex-col md:flex-row">
+        <!-- Sidebar Section (with white background) -->
+        <div class=" h-auto bg-gray-100 p-4 mr-4">
+            <!-- Filters Section -->
+            <div class="p-4 mb-4">
+                <p class="text-xl font-bold">Filters</p>
+                <div>
+                    <p class="text-lg">ARCHAEOLOGICAL SITE</p>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-3">
+                            <input 
+                              id="custom-checkbox" 
+                              type="checkbox" 
+                              class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                            />
+                            <label for="custom-checkbox" class=" text-lg font-small">Begho</label>
+                          </div>
+                        
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-3">
+                            <input 
+                              id="custom-checkbox" 
+                              type="checkbox" 
+                              class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                            />
+                            <label for="custom-checkbox" class=" text-lg font-small">Koma land</label>
+                          </div>
+                        
+                       
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-3">
+                            <input 
+                              id="custom-checkbox" 
+                              type="checkbox" 
+                              class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                            />
+                            <label for="custom-checkbox" class=" text-lg font-small">Marine Drive</label>
+                          </div>
+                        
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-3">
+                            <input 
+                              id="custom-checkbox" 
+                              type="checkbox" 
+                              class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                            />
+                            <label for="custom-checkbox" class=" text-lg font-small">Kintampo Complex</label>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <!-- Sub-Site Section -->
+            <div class="p-4 mb-4">
+                <p class="text-xl font-bold">SUB-SITE</p>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Atwetwebooso</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Brong Quater (B1)</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Brong Quater (B2)</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Dwinfuor Quater </label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Kramo Quater </label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Mumute</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Nyarko Quater (NY1)</label>
+                    </div>
+                    
+                </div>
+                <a href="#" class="text-[#F3B2B3] text-sm">+234 more </a>
+            </div>
+            
+            <!-- Categories Section -->
+            <div class="p-4">
+                <p class="text-xl font-bold">CATEGORIES</p>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Projects</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Datasets</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Stratigraphic Info</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Arifacts</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Documents</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Faunal Remains</label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Field Images </label>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-3">
+                        <input 
+                          id="custom-checkbox" 
+                          type="checkbox" 
+                          class="h-3 w-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <label for="custom-checkbox" class=" text-lg font-small">Field Records Forms</label>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- Main Content Section -->
+        <div class=" bg-gray-50 p-4 grid grid-cols-2 lg:grid-cols-12" id="database">
+            <!-- This section can contain the main content of your page -->
+           
+            <!-- <img src="image 7.png" alt="image "  class="w-[297px] h-[347px] mr-4 border">
+            <img src="Koma Land 2.png" alt="image "  class="w-[297px] h-[344px] mr-4">
+            <img src="Frame 99.png" alt="image "  class="w-[297px] h-[491px] "> -->
+        </div>
+        <div class="flex justify-center items-center space-x-2 fixed bottom-0  right-0 mb-4 mr-4">
+            <!-- Previous Button -->
+            <button id="prev-btn" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">&lt;</button>
+        
+            <!-- Page Numbers -->
+            <span id="page-1" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">1</span>
+            <span id="page-2" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">2</span>
+            <span id="page-3" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">3</span>
+            <span id="page-4" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">4</span>
+            <span id="page-5" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">5</span>
+        
+            <!-- Next Button -->
+            <button id="next-btn" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">&gt;</button>
+        </div>
+        
+    </div>
+    </div>
+        
+    <script src="main.js"></script>
+</body>
+</html>
