@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container mx-auto">
@@ -18,9 +19,8 @@
                     
                     <ul class="flex space-x-4 text-black font-bold text-xl items-center  font-serif">
                         <li><a href="Home.html" class="hover:underline ">Home</a></li>
-                        <li><a href="About.html" class="hover:underline">About US</a></li>
-                        
-                            <li class="relative group">
+                        <li><a href="About.html" class="hover:underline">About US</a></li> 
+                        <li class="relative group">
                                 <a href="Database.html" class="hover:underline ">Database</a>
                                 <!-- Subsections -->
                                 <ul class="absolute hidden z-10 group-hover:flex flex-col bg-white border shadow-md mt-2 left-0 w-40 space-y-1 rounded-md">
@@ -28,16 +28,23 @@
                                   <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 2</a></li>
                                   <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 3</a></li>
                                 </ul>
-                              </li>   
+                        </li>   
                 
-                        <li><a href="Blog.html" class="hover:underline bg-[#EB5757]">Blogs</a></li>
+                        <li class="relative group">
+                            <a href="Blog.html" class="hover:underline bg-[#EB5757] text-black px-4 py-2 block">Blogs</a>
+                            
+                            <!-- Dropdown Menu -->
+                            <ul class="absolute hidden group-hover:flex flex-col bg-white border shadow-md mt-2 left-0 w-40 space-y-1 rounded-md z-10">
+                                <li><a href="Blog-detail.html" class="block px-4 py-2 hover:bg-gray-100">Blog Post</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 2</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 3</a></li>
+                            </ul>
+                        </li>
                         <li><a href="Contact.html" class="hover:underline">Contact US</a></li>
                         <li><a href="Become.html" class="hover:underline ">Become a Contributor</a></li>
                     </ul>
                 </div>
-                <div>
-                    <button class="text-black">login</button>
-                </div>
+               
             </div>
         </nav>
     
@@ -50,12 +57,116 @@
             <div class="container mx-auto text-white flex justify-between items-center p-2">
                 <!-- Left: DATABASE title and description -->
                 <div>
-                    <h1 class="text-xl font-semibold">DATABASE</h1>
-                    <p class="text-sm text-blue-400 hover:underline cursor-pointer">Explore our diverse collection</p>
-                </div>
-        
-                
+                    <h1 class="text-xl font-semibold">BLOGS</h1>
+                    <p class="text-sm text-blue-400 hover:underline cursor-pointer">Learn about Ghana’s Post</p>
+                </div>  
             </div>
         </div>
+        <div class="container mx-auto flex justify-between items-center p-2">
+            <div>
+                <p class=" text-gray-600 cursor-pointer">Showing 1-20 out of 2,356 Products</p>
+                
+            </div>
+            <!-- <div class="flex items-center space-x-2">
+                <p>Sort By: New Arrivals <i class='bx bx-chevron-down'></i></p>
+            </div> -->
+            <div class="relative inline-block text-left">
+                <!-- Dropdown Trigger -->
+                <div class="flex items-center space-x-2 cursor-pointer" onclick="toggleDropdown()">
+                    <p>Sort By: <span id="selected-sort">New Arrivals</span></p>
+                    <i class="bx bx-chevron-down dropdown-icon"></i>
+                </div>
+        
+                <!-- Dropdown Menu -->
+                <div id="dropdown-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 hidden z-10">
+                    <ul class="py-1 text-gray-700" aria-labelledby="dropdown-button">
+                        <li><a href="#" onclick="selectSort('New Arrivals')" class="block px-4 py-2 hover:bg-gray-100">New Arrivals</a></li>
+                        <li><a href="#" onclick="selectSort('Best Sellers')" class="block px-4 py-2 hover:bg-gray-100">Best Sellers</a></li>
+                        <li><a href="#" onclick="selectSort('Price: Low to High')" class="block px-4 py-2 hover:bg-gray-100">Price: Low to High</a></li>
+                        <li><a href="#" onclick="selectSort('Price: High to Low')" class="block px-4 py-2 hover:bg-gray-100">Price: High to Low</a></li>
+                    </ul>
+                </div>
+            </div>
+   
+        </div>
+        <div class="container mx-auto flex justify-center items-center p-2">
+            <div class="relative border-2 border-black p-1">
+                <img src="assets/Standing Figurine 1.png" alt="Image" class="object-contain w-full h-[400px]">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="text-black text-4xl font-bold">Daboya</p>
+                </div>
+                <p class="text-white bg-black w-full p-2 text-center absolute bottom-0">
+                    One of West Africa’s Oldest settlement <br>
+                    with 4000 years of settlement history
+                </p>
+            </div>
+        </div>
+        
+        <div class="flex justify-center items-center">
+            <a href="Daboya.html">
+                <button class="bg-[#EB5757] text-black p-2 border-2 border-black rounded-md">
+                    Read More
+                </button>
+            </a>
+        </div>
+        <div class="container mx-auto flex justify-center items-center p-2">
+        <div class="relative border-2 border-black ">
+            <img src="assets/elmina.png" alt="Image" class="object-contain w-full h-[400px]">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <p class="text-white text-6xl font-bold">Dixcove</p>
+            </div>
+            <p class="text-white bg-black w-full p-2 text-center absolute bottom-0">
+                A vibrant trade hub during the Atlantic Trade era <br>
+                with an intriguing Anglo-Ahantan interractions 
+            </p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center items-center">
+        <a href="DIXCOVE.html">
+            <button class="bg-[#EB5757] text-black p-2 border-2 border-black rounded-md">
+                Read More
+            </button>
+        </a>
+    </div>
+    <div class="container mx-auto flex justify-center items-center p-2">
+        <div class="relative border-2 border-black ">
+            <img src="assets/kintampo-Culture 1.png" alt="Image" class="object-contain w-full h-[400px]">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <p class="text-white text-6xl font-bold">Kintampo <br> Complex</p>
+            </div>
+            <p class="text-white bg-black w-full p-2 text-center absolute bottom-0">
+                The Kintampo Complex marks a pivotal shift in West African prehistory, <br>
+                illustrating the transition from a mobile hunter-gatherer lifestyle to <br>
+                more settled communities and complex societies around 2000 BC
+            </p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center items-center">
+        <a href="Kintampo.html">
+            <button class="bg-[#EB5757] text-black p-2 border-2 border-black rounded-md">
+                Read More
+            </button>
+        </a>
+    </div>
+    <div class="flex justify-center items-center space-x-2 fixed bottom-0  right-0 mb-4 mr-4">
+        <!-- Previous Button -->
+        <button id="prev-btn" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">&lt;</button>
+    
+        <!-- Page Numbers -->
+        <span id="page-1" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">1</span>
+        <span id="page-2" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">2</span>
+        <span id="page-3" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">3</span>
+        <span id="page-4" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">4</span>
+        <span id="page-5" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">5</span>
+    
+        <!-- Next Button -->
+        <button id="next-btn" class="px-3 py-1 rounded-md bg-gray-200 text-gray-700 hover:bg-gray-300">&gt;</button>
+    </div>
+    </div> 
+    <script src="blog.js"></script>  
 </body>
 </html>

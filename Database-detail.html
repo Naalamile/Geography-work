@@ -9,39 +9,34 @@
 <body class="bg-white">
     <div class="container mx-auto">
         <!-- Menu Bar -->
-        <nav class=" p-2">
-            <div class=" container mx-auto flex justify-between items-center">
-                <div class=" font-semibold w-45">
-                    <img  src="assets\Heritage Quest Logo 1.png" >
+        <nav class="p-2">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="w-45">
+                    <img src="assets/Heritage Quest Logo 1.png" alt="Logo">
                 </div>
-                <div class="container mx-auto flex justify-center">
-                    
-                    <ul class="flex space-x-4 text-black font-bold text-xl items-center  font-serif">
+                <div class="flex justify-center">
+                    <ul class="flex space-x-4 text-black font-bold text-xl items-center font-serif">
                         <li><a href="Home.html" class="hover:underline">Home</a></li>
-                        <li><a href="About.html" class="hover:underline">About US</a></li>
-                        
-                            <li class="relative group">
-                                <a href="Database.html" class="hover:underline bg-[#EB5757]">Database</a>
-                                <!-- Subsections -->
-                                <ul class="absolute hidden z-10 group-hover:flex flex-col bg-white border shadow-md mt-2 left-0 w-40 space-y-1 rounded-md">
-                                  <li><a href="Database-detail.html" class="block px-4 py-2 hover:bg-gray-100">Database</a></li>
-                                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 2</a></li>
-                                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 3</a></li>
-                                </ul>
-                              </li>   
-                
+                        <li><a href="About.html" class="hover:underline">About Us</a></li>
+                        <li class="relative group">
+                            <a href="Database.html" class="hover:underline bg-[#EB5757]">Database</a>
+                            <!-- Subsections -->
+                            <ul class="absolute hidden z-10 group-hover:flex flex-col bg-white border shadow-md mt-2 left-0 w-40 space-y-1 rounded-md">
+                                <li><a href="Database-detail.html" class="block px-4 py-2 hover:bg-gray-100">Database</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 2</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Subsection 3</a></li>
+                            </ul>
+                        </li>
                         <li><a href="Blog.html" class="hover:underline">Blogs</a></li>
-                        <li><a href="Contact.html" class="hover:underline">Contact US</a></li>
+                        <li><a href="Contact.html" class="hover:underline">Contact Us</a></li>
                         <li><a href="Become.html" class="hover:underline">Become a Contributor</a></li>
                     </ul>
                 </div>
-                <div>
-                    <button class="text-black">login</button>
-                </div>
+                
             </div>
         </nav>
-    
-    
+        
+        <!-- Header Section -->
         <div class=" relative bg-[#111827] py-4 h-[119px]">
             <div class="absolute right-0 top-0 flex items-center h-full">
                 <!-- Image: Reduced size and aligned to the left -->
@@ -51,59 +46,89 @@
             <div class="container mx-auto text-white flex justify-between items-center p-2">
                 <!-- Left: DATABASE title and description -->
                 <div>
-                    <h1 class="text-xl font-semibold">DATABASE</h1>
-                    <p class="text-sm text-blue-400 hover:underline cursor-pointer">Explore our diverse collection</p>
+                    <h1 class="text-xl font-semibold">DETAILS</h1>
+                   
                 </div>
-            
-            </div>
-        </div>
-        <div class="mt-10 flex bg-[#F9FAFB] p-10 m-12 flex justify-center rounded-2xl ">
-            <div class="flex bg-gray-50 flex items-center">
-                <img src="assets\Koma Land 2.png" class=" " alt="Logo">
-            </div>
-        </div>
-        <div class="mt-10 flex  justify-start items-center ">
-            <div class="bg-black p-4  rounded-2xl w-32 h-12 mr-20 flex items-center justify-center">
-                <p class="text-white ">Object Name </p>
-            </div>
-            <div class="flex rounded-2xl h-20 w-60 drop-shadow-lg ">
-                <input type="text" placeholder="" class="px-2 py-1 border border-gray-300 bg-[#D9D9D9] rounded-md ">
-            </div>
-        </div>
-        <div class="mt-10 flex justify-start items-center  ">
-            <div class="bg-black p-4  rounded-2xl w-48 h-12 mr-2 flex items-center justify-center">
-                <p class="text-white text-sm ">Object Description </p>
-            </div>
-            <div class="flex rounded-2xl h-32 w-60 drop-shadow-lg ">
-                <input type="text" placeholder="" class="px-2 py-1 border border-gray-300 bg-[#D9D9D9] rounded-md ">
-            </div>
-        </div>
-        <div class="mt-10 flex justify-start items-center ">
-            <div class="bg-black p-4   rounded-2xl w-48 h-12 mr-2  flex items-center justify-center">
-                <p class="text-white text-sm ">Site of Origin </p>
-            </div>
-            <div class="flex rounded-2xl h-32 w-60 drop-shadow-lg ">
-                <input type="text" placeholder="" class="px-2 py-1 border border-gray-300 bg-[#D9D9D9] rounded-md ">
-            </div>
-        </div>
-        <div class="mt-10 flex justify-start items-center  ">
-            <div class="bg-black p-4  rounded-2xl w-48 h-12 mr-2 flex items-center justify-center">
-                <p class="text-white text-sm ">Excavator's Name  </p>
-            </div>
-            <div class="flex rounded-2xl h-20 w-60 drop-shadow-lg ">
-                <input type="text" placeholder="" class="px-2 py-1 border border-gray-300 bg-[#D9D9D9] rounded-md ">
-            </div>
-        </div>
-        <div class="mt-10 flex justify-start items-center ">
-            <div class="bg-black p-4 rounded-2xl w-48 h-12 mr-2 flex items-center justify-center">
-                <p class="text-white text-sm  ">Year</p>
-            </div>
-            <div class="flex rounded-2xl h-32 w-60 drop-shadow-lg ">
-                <input type="text" placeholder="" class="px-2 py-1 border border-gray-300 bg-[#D9D9D9] rounded-md ">
+        
+                
             </div>
         </div>
         
-    </div>
-    <script>"data.js"</script>
+        <!-- Content Section -->
+        <div class="mt-8 flex justify-center p-10 rounded-2xl">
+            <div class="flex flex-col md:flex-row items-start space-x-8 w-full max-w-5xl">
+                <!-- Image Section with Centered Caption -->
+                <div class="text-center">
+                    <img src="assets/Fragments of smoking pipes found on the surface 2.png" class="w-[300px] h-auto" alt="Artifact Image">
+                    <p class="mt-2 text-lg font-semibold">Local Smoke Pipe</p>
+                </div>
+                
+                <!-- Description Section with Paragraph Text -->
+                <div class="flex flex-col w-full space-y-4">
+                    <!-- Title for Description -->
+                    <p class="text-black font-bold text-xl mb-2">Image Description</p>
+                
+                    <!-- Container for Paragraph Text -->
+                    <div class="w-full px-4 py-4 border border-gray-300 bg-[#D9D9D9] rounded-b-lg">
+                        <p class="text-justify">
+                            Surface Find, It has a flat base and stems that are joined to the base at a single angle. It has multiple decorations, including a burnished surface treatment, an incision, a groove, and a stamp.
+                        </p>
+                    </div>
+                    
+                    <!-- Typology Section -->
+                    <div class="items-center  mt-5">
+                        <p class="text-black text-lg font-bold">Artifact Typology</p>
+                        <div class="flex-grow px-4 py-2 border border-gray-300 bg-[#D9D9D9] rounded-b-lg w-32">
+                            <p>Type 3a</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Details Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 max-w-4xl mx-auto">
+            <!-- Archaeological Site -->
+            <div class="space-y-2">
+                <p class="text-black text-lg font-bold text-center">Archaeological Site</p>
+                <div class="px-4 py-2 border border-gray-300 bg-[#D9D9D9] rounded-b-lg text-center">
+                    <p>Begho</p>
+                </div>
+            </div>
+            
+            <!-- Artifact Chronology/Date -->
+            <div class="space-y-2">
+                <p class="text-black text-lg font-bold text-center">Artifact Chronology/Date</p>
+                <div class="px-4 py-2 border border-gray-300 bg-[#D9D9D9] rounded-b-lg text-center">
+                    <p>1630-1670</p>
+                </div>
+            </div>
+            
+            <!-- Researcher's Name -->
+            <div class="space-y-2">
+                <p class="text-black text-lg font-bold text-center">Researcher's Name</p>
+                <div class="px-4 py-2 border border-gray-300 bg-[#D9D9D9] rounded-b-lg">
+                    <p>Project Name: Kumah’s PhD Project</p>
+                    <p>Researcher(s): Daniel Kumah</p>
+                    <p>Year: 2020</p>
+                    <div class="flex justify-center mt-4">
+                        <button class="bg-[#EB5757] hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
+                            More
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comment Section -->
+            <div class="space-y-2">
+                <p class="text-black text-lg font-bold text-center">Comment</p>
+                <div class="px-4 py-2 border border-gray-300 bg-[#D9D9D9] rounded-b-lg">
+                    <p>Typology is based on Ozanne (1963), Boachie-Ansah (1986), Afeku (1976), Effah-Gyamfi (1981), McIntosh et al. (2006), Stahl (2001), Campbell (2006), and Kumah (2022).</p>
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="data.js"></script>
 </body>
 </html>

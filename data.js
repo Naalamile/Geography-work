@@ -12,19 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check if form fields are correctly selected
     console.log(formFields);
 
-    // Add Submit Button
-    const submitButton = document.createElement("button");
-    submitButton.textContent = "Submit";
-    submitButton.classList.add("bg-blue-500", "text-white", "px-4", "py-2", "rounded", "mt-4");
-    submitButton.addEventListener("click", handleSubmit);
-    document.querySelector(".container").appendChild(submitButton);
-
-    // Add Reset Button
-    const resetButton = document.createElement("button");
-    resetButton.textContent = "Reset";
-    resetButton.classList.add("bg-gray-500", "text-white", "px-4", "py-2", "rounded", "mt-4", "ml-2");
-    resetButton.addEventListener("click", handleReset);
-    document.querySelector(".container").appendChild(resetButton);
 
     function handleSubmit(e) {
         e.preventDefault();
